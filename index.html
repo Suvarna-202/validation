@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script> 
+        const name =  document.getElementById("name").innerHTML;
+    
+
+        const password = document.getElementById("password").innerHTML;
+        const email = document.getElementById("email").innerHTML;
+        const phonenumber = document.getElementById("phone number").innerHTML;
+
+
+        if(name.value.length <=6  || name == ""){
+            alert("name should contain alphabets and should not less than 6 characters");
+            name.focus();
+            return false;
+
+        }
+        
+        if(password.value.length<6){
+            alert("password should not less than 6 characters");
+            password.focus();
+            return false;
+        }
+
+        
+        if(email.value=""||email){
+             alert("email should follow a certain pattern");
+             email.focus();
+             return false;
+
+        }
+        if(phonenumber.length == 10){
+            alert("phone number should contain 10 digits");
+            phonenumber.focus();
+            return false;
+        }
+
+       
+    </script>
+    
+</head>
+<body>
+    <div class="container">
+        <form action="registration page">
+            <h1 text-align="center">Registration Page</h1>
+            <label for="name" class="name">Name:</label>
+            <input type="text" class="name"id="name" placeholder="enter your name"> <br> <br><br>
+            <label for="password" class="password">Password:</label>
+            <input type="text" class="password"id="password" placeholder="enter your password"> <br> <br> <br>
+            <label for="email" class="email">Email:</label>
+            <input type="text" class="email"id="name" placeholder="enter your email"> <br><br><br>
+            <label for="phone number" class="phone number">phone number:</label>
+            <input type="text" class="phone number"id="phone number">
+        </form>
+    </div>
+</body>
+</html>
